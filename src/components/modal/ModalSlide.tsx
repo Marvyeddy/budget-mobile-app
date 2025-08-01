@@ -139,20 +139,7 @@ export default function ModalSlide({
                   </>
                 ) : (
                   <>
-                    <View
-                      style={{
-                        marginTop: vs(16),
-                        flexDirection: "row",
-                        justifyContent: "space-between",
-                        alignItems: "baseline",
-                        height: vs(96),
-                        borderWidth: 1,
-                        borderColor: "#FFFFFF0A",
-                        borderRadius: s(12),
-                        paddingTop: vs(32),
-                        paddingHorizontal: s(12),
-                      }}
-                    >
+                    <View style={styles.budget_input_ctn}>
                       <AppText
                         style={{
                           opacity: 0.5,
@@ -186,21 +173,7 @@ export default function ModalSlide({
                       </AppText>
                     </View>
 
-                    <Pressable
-                      style={{
-                        backgroundColor: "#000A14",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        paddingVertical: vs(8),
-                        paddingHorizontal: s(12),
-                        width: s(142),
-                        height: vs(34),
-                        borderRadius: 100,
-                        gap: 10,
-                        marginLeft: "auto",
-                        marginTop: vs(16),
-                      }}
-                    >
+                    <Pressable style={styles.budget_btn}>
                       <CheckIcon />
                       <AppText
                         variant="medium"
@@ -241,5 +214,30 @@ const styles = StyleSheet.create({
   },
   active: {
     backgroundColor: "#FFFFFF1F",
+  },
+  budget_btn: {
+    backgroundColor: "#000A14",
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: vs(8),
+    paddingHorizontal: s(12),
+    width: s(142),
+    height: vs(34),
+    borderRadius: 100,
+    gap: 10,
+    marginLeft: "auto",
+    marginTop: vs(16),
+  },
+  budget_input_ctn: {
+    marginTop: vs(16),
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    height: vs(96),
+    borderWidth: 1,
+    borderColor: "#FFFFFF0A",
+    borderRadius: s(12),
+    paddingTop: vs(32),
+    paddingHorizontal: s(12),
   },
 });
