@@ -21,7 +21,11 @@ export default function AppSafeView({
       }}
     >
       {/* Your content goes here */}
-      <SafeAreaView>
+      <SafeAreaView
+        style={{
+          flex: 1,
+        }}
+      >
         <View style={[styles.container, style]}>{children}</View>
       </SafeAreaView>
     </LinearGradient>
